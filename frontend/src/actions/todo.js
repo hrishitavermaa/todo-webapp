@@ -36,7 +36,7 @@ export const createTodo = async (
 };
 
 export const fetchAllTodos = async () => {
-  const response = await axios.get("https://todo-webapp-51i9.onrender.com//api/v1/todos");
+  const response = await axios.get("https://todo-webapp-51i9.onrender.com/api/v1/todos");
   const todos = response.data.message;
   todos.sort((todoOne, todoTwo) => {
     return todoOne.priority - todoTwo.priority;

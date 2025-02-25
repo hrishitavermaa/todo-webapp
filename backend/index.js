@@ -8,7 +8,7 @@ const userRouter = require("./routes/user.js");
 const authRouter = require("./routes/auth.js");
 const { errorMiddleware } = require("./middlewares/error.js");
 
-dotenv.config({ path: "./config/config.env" });
+dotenv.config();
 require("./config/db");
 
 process.on("uncaughtException", (err) => {

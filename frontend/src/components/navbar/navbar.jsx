@@ -10,7 +10,7 @@ export default function Navbar() {
       <div className="flex items-center">
         <img src="logo.png" className="w-8 h-8 mr-3" />
         <h1 className="text-2xl font-bold">
-          Task<span className="text-yellow-500">Nest</span>
+          Focus<span className="text-yellow-500">Flow</span>
         </h1>
       </div>
       {isAutheticated.state === "hasValue" && isAutheticated.contents && (

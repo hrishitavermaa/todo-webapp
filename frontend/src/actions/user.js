@@ -5,7 +5,7 @@ import "react-toastify/dist/ReactToastify.css";
 export const createUser = async (name, email, password) => {
   try {
     const userPayload = { name: name, email: email, password: password };
-    await axios.post("/api/v1/user/signup", userPayload);
+    await axios.post("https://todo-webapp-51i9.onrender.com//api/v1/user/signup", userPayload);
     window.location.reload();
   } catch (err) {
     toast.error(err.response.data.message, {
@@ -25,7 +25,7 @@ export const createUser = async (name, email, password) => {
 export const signUser = async (email, password) => {
   try {
     const userPayload = { email: email, password: password };
-    await axios.post("/api/v1/user/signin", userPayload);
+    await axios.post("https://todo-webapp-51i9.onrender.com//api/v1/user/signin", userPayload);
     window.location.reload();
   } catch (err) {
     toast.error(err.response.data.message, {
@@ -45,7 +45,7 @@ export const signUser = async (email, password) => {
 export const updateUser = async (name) => {
   try {
     const userPayload = { name: name };
-    const response = await axios.put("/api/v1/user/me", userPayload);
+    const response = await axios.put("https://todo-webapp-51i9.onrender.com//api/v1/user/me", userPayload);
   } catch (error) {
     console.log(error);
   }
@@ -53,7 +53,7 @@ export const updateUser = async (name) => {
 
 export const fetchUser = async () => {
   try {
-    const response = await axios.get("/api/v1/user/me");
+    const response = await axios.get("https://todo-webapp-51i9.onrender.com//api/v1/user/me");
     return response.data;
   } catch (error) {
     console.log(error);
@@ -62,7 +62,7 @@ export const fetchUser = async () => {
 
 export const logoutUser = async () => {
   try {
-    await axios.get("api/v1/user/logout");
+    await axios.get("https://todo-webapp-51i9.onrender.com/api/v1/user/logout");
     window.location.reload();
   } catch (error) {
     console.log(error);
@@ -71,7 +71,7 @@ export const logoutUser = async () => {
 
 export const deleteUser = async () => {
   try {
-    await axios.delete("/api/v1/user/me");
+    await axios.delete("https://todo-webapp-51i9.onrender.com//api/v1/user/me");
     window.location.reload();
   } catch (error) {
     console.log(error);

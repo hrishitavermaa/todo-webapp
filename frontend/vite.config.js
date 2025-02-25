@@ -9,7 +9,7 @@ export default defineConfig({
     historyApiFallback: true, 
     proxy: {
       '/api': {
-        target: 'https://todo-webapp-ya5m.onrender.com',
+        target: 'https://todo-webapp-51i9.onrender.com',
         changeOrigin: true,
         secure: false,
       },

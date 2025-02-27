@@ -1,4 +1,4 @@
-# TaskNest
+# FocusFlow
 
 TaskNest is a simple Todo web application built using the MERN stack. It allows users to create, delete, and view a list of todos. The application utilizes ReactJS for the frontend, NodeJS and Express for the backend, and MongoDB for the database. Recoil is used for state management in the frontend.
 
